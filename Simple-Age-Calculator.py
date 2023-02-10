@@ -3,9 +3,7 @@ from datetime import date
 def calculator_age(birthday):
     today = date.today()
     day_check = ((today.month,today.day)<(birthday.month,birthday.day))
-    #print(day_check)
     year_diff = today.year - birthday.year
-    #print(year_diff)
     age_in_years = year_diff - day_check
     remaining_months = abs(today.month - birthday.month)
     remaining_days = abs(today.day - birthday.day)
